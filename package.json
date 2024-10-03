@@ -1,10 +1,10 @@
 {
-  "name": "forKify",
+  "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe App",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel index.html"
   },
   "author": "Ahmed Mekawi",
   "license": "ISC",
