@@ -6,10 +6,11 @@ export default class View {
   #errorMessage
   #message
 
-  render(data){
+  render(data, render = true){
     if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError()
     this.#data = data;
     const markup = this.#generateMarkup();
+    if (!render) return markup;
     this.#clear();
     this.#parentElement.insertAdjacentHTML('afterbegin', markup)
   }
