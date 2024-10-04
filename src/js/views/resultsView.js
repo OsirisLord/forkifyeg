@@ -5,12 +5,15 @@ class ResultsView extends View {
   #parentElement = document.querySelector('.results');
   #errorMessage = 'No Results Found';
   #message = '';
+
   #generateMarkup(){
     return this.#data.map(this.#generateMarkupPreview).join('')
   }
-  #generateMarkupPreview(){
-    `<li class="preview">
-            <a class="preview__link preview__link" href="#${result.id}">
+  #generateMarkupPreview(result){
+    const id = window.location.hash.slice(1)
+
+    return `<li class="preview">
+            <a class="preview__link ${result.id === id ? 'preview__link--active' : ''}" href="#${result.id}">
               <figure class="preview__fig">
                 <img src="${result.image}" alt="${result.title}" />
               </figure>
