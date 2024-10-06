@@ -33,6 +33,8 @@ Forkify is a web application that allows users to search for recipes, view recip
 3. Run the development server: `npx vite`
 4. Build for production: `vite build`
 
+or visit https://forkifyeg.netlify.app/
+
 ## Usage
 
 1. Open the application in a web browser
