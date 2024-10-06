@@ -1,4 +1,4 @@
-import icons from 'src/img/icons.svg'
+import icons from '../../img/icons.svg';
 export default class View {
   #data;
   #parentElement

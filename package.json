@@ -2,17 +2,23 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe App",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "author": "Ahmed Mekawi",
   "license": "ISC",
-  "devDependencies": {},
   "dependencies": {
     "core-js": "^3.38.1",
     "fracty": "^1.0.11",
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.79.4"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.79.4",
+    "vite": "^5.4.8"
   }
 }
