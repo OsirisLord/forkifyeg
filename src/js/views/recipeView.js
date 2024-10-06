@@ -1,5 +1,5 @@
 import View from './View';
-import icons from 'url:../../img/icons.svg'
+import icons from 'src/img/icons.svg'
 import fracty from 'fracty';
 
 class RecipeView extends View {
@@ -65,7 +65,10 @@ class RecipeView extends View {
             </div>
           </div>
 
-          <div class="recipe__user-generated">
+         <div class="recipe__user-generated ${this.data.key ? '' : 'hidden'}">
+            <svg>
+              <use href="${icons}#icon-user"></use>
+            </svg>
           </div>
           <button class="btn--round">
             <svg class="">

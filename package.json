@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "description": "Recipe App",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "Ahmed Mekawi",
   "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
-  },
+  "devDependencies": {},
   "dependencies": {
     "core-js": "^3.38.1",
     "fracty": "^1.0.11",
